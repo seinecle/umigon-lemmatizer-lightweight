@@ -4,34 +4,19 @@
     <groupId>net.clementlevallois.functions</groupId>
     <artifactId>umigon-lemmatizer-lightweight</artifactId>
     <version>0.10</version>
-    <packaging>jar</packaging>
+
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <name>umigon-lemmatizer-leight</name>
 
-    <description>a very lightweight and effective lemmatizer for English and French</description>
+    <name>umigon-lemmatizer-lightweight</name>
+    <description>because we don't always need a lemmatizer the size of hundreds of Mb</description>
     <url>https://github.com/seinecle/umigon-lemmatizer-lightweight</url>
-    
-    <!-- Licenses -->
-    <licenses>
-        <license>
-            <name>Creative Commons Attribution 4.0 International Public License</name>
-            <url>https://creativecommons.org/licenses/by/4.0/legalcode</url>
-            <comments>CDDL License 1.0</comments>
-        </license>
-    </licenses>
+    <inceptionYear>2013</inceptionYear>
 
-    <!-- SCM -->
-    <scm>
-        <connection>scm:git:git@github.com:seinecle/umigon-model.git</connection>
-        <developerConnection>scm:git:git@github.com:seinecle/umigon-lemmatizer-lightweight.git</developerConnection>
-        <url>https://github.com/seinecle/umigon-lemmatizer-lightweight</url>
-    </scm>
-    
     <!-- Developers -->
     <developers>
         <developer>
@@ -41,6 +26,23 @@
         </developer>
     </developers>
 
+        
+    <!-- Licenses -->
+    <licenses>
+        <license>
+            <name>Creative Commons Attribution 4.0 International Public License</name>
+            <url>https://creativecommons.org/licenses/by/4.0/legalcode</url>
+        </license>
+    </licenses>
+
+    <!-- SCM -->
+    <scm>
+        <connection>scm:git:git@github.com:seinecle/umigon-lemmatizer-lightweight.git</connection>
+        <developerConnection>scm:git:git@github.com:seinecle/umigon-lemmatizer-lightweight.git</developerConnection>
+        <url>https://github.com/seinecle/umigon-lemmatizer-lightweight</url>
+    </scm>
+    
+    
     <!-- Build -->
     <build>
         <plugins>
@@ -57,18 +59,6 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.ow2.asm</groupId>
-                        <artifactId>asm</artifactId>
-                        <version>9.4</version>
-                    </dependency>
-                </dependencies>
-            </plugin>        
         </plugins>
     </build>
     <!-- Profile to publish to Maven Central-->
@@ -79,7 +69,7 @@
                 <altDeploymentRepository>local::file:./target/staging-deploy</altDeploymentRepository>
             </properties>            
             <build>
-                <defaultGoal>deploy</defaultGoal>
+                <defaultGoal>clean deploy</defaultGoal>
                 <plugins>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
