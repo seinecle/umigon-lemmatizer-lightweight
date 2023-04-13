@@ -3,11 +3,16 @@ A lemmatizer for English and French.
 
 ## Installation
 
+This is a dependency free, 8kb jar:
+
+```xml
 <dependency>
 	<groupId>net.clementlevallois.functions</groupId>
 	<artifcactId>umigon-lemmatizer-lightweight</artifactId>
 	<version>0.11</version>
 </dependency>
+```
+
 
 Or [check on Maven](https://central.sonatype.com/artifact/net.clementlevallois.functions/umigon-lemmatizer-lightweight) to see the latest version.
 
