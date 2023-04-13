@@ -1,6 +1,16 @@
 ### What?
 A lemmatizer for English and French.
 
+## Installation
+
+<dependency>
+	<groupId>net.clementlevallois.functions</groupId>
+	<artifcactId>umigon-lemmatizer-lightweight</artifactId>
+	<version>0.11</version>
+</dependency>
+
+Or [check on Maven](https://central.sonatype.com/artifact/net.clementlevallois.functions/umigon-lemmatizer-lightweight) to see the latest version.
+
 ### How to use it?
 
 - call it directly in your code, to lemmatize a sentence:
