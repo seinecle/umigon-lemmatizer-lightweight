@@ -1,7 +1,9 @@
 ### What?
-A lemmatizer for English and French.
+A lemmatizer for **English**, **French** and **Spanish**.
 
 ## Installation
+
+Requires Java 17 or higher.
 
 This is a dependency free, 8kb jar:
 
@@ -12,7 +14,6 @@ This is a dependency free, 8kb jar:
 	<version>0.11</version>
 </dependency>
 ```
-
 
 Or [check on Maven](https://central.sonatype.com/artifact/net.clementlevallois.functions/umigon-lemmatizer-lightweight) to see the latest version.
 
@@ -34,7 +35,8 @@ String result = lemmatizer.lemmatize("Students");
 
 
 ### Pros
-- light weight: one single file
+- light weight: 13kb, no dependencies
+- interpretable. The lemmatizer are rule-based, which makes it easy to understand, interpret, audit and improve.
 
 ### What for?
 Excellent lemmatizers already exist for French and English. To excel, they use large scale models (hundreds of megabytes per language) or require extensive pre-processing on the text to be lemmatized (such a part of speech tagging).
