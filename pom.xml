@@ -149,8 +149,8 @@
                                                 <url>https://s01.oss.sonatype.org/service/local</url>
                                                 <username>${maven_username}</username>
                                                 <password>${maven_token}</password>
-                                                
                                                 <closeRepository>true</closeRepository>
+
                                                 <releaseRepository>true</releaseRepository>
                                                 <stagingRepositories>target/staging-deploy</stagingRepositories>
                                             </maven-central>
