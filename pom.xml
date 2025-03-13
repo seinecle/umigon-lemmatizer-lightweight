@@ -9,6 +9,8 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven_username>${env.MAVEN_USER}</maven_username>
+        <maven_token>${env.MAVEN_TOKEN}</maven_token>
     </properties>
 
 
@@ -144,7 +146,9 @@
                                         <nexus2>
                                             <maven-central>
                                                 <active>ALWAYS</active>
-                                                <url>https://s01.oss.sonatype.org/service/local</url>;
+                                                <url>https://s01.oss.sonatype.org/service/local</url>
+                                                <username>${maven_username}</username>
+                                                <password>${maven_token}</password>
                                                 <closeRepository>true</closeRepository>
                                                 <releaseRepository>true</releaseRepository>
                                                 <stagingRepositories>target/staging-deploy</stagingRepositories>
