@@ -109,7 +109,7 @@ project:
     languages:
         java:
             enabled: true
-            version: 21
+            version: 17
             groupId: net.clementlevallois.functions
             artifactId: umigon-lemmatizer-lightweight
             jvmOptions:
@@ -505,8 +505,8 @@ catalog:
  
 [INFO]  Project version set to 0.13
 [INFO]  Release is not snapshot
-[INFO]  Timestamp is 2025-03-13T11:30:50.1007108+01:00
-[INFO]  HEAD is at ab9fc8d
+[INFO]  Timestamp is 2025-03-13T11:32:41.3373604+01:00
+[INFO]  HEAD is at b96ab40
 [INFO]  Platform is windows-x86_64
 [DEBUG] loading extension default-jreleaser-mustache:org.jreleaser.extensions.internal.mustache.DefaultMustacheExtension
 [DEBUG] adding org.jreleaser.extensions.internal.mustache.DefaultMustacheExtensionPoint from default-jreleaser-mustache extension
@@ -514,4 +514,4 @@ catalog:
 [INFO]  Assembling distributions
 [INFO]    [assemble] Assembling is not enabled. Skipping
 [INFO]  Writing output properties to target\jreleaser\output.properties
-[INFO]  JReleaser succeeded after 0.002 s
+[INFO]  JReleaser succeeded after 0.003 s
