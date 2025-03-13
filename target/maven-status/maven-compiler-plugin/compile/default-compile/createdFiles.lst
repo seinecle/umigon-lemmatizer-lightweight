@@ -1,0 +1,7 @@
+net\clementlevallois\lemmatizerlightweight\en\LemmatizerEN.class
+module-info.class
+net\clementlevallois\lemmatizerlightweight\en\BritishAmericanMerger.class
+net\clementlevallois\lemmatizerlightweight\fr\LemmatizerFR.class
+net\clementlevallois\lemmatizerlightweight\Lemmatizer.class
+net\clementlevallois\lemmatizerlightweight\es\LemmatizerES.class
+net\clementlevallois\lemmatizerlightweight\LemmatizerInterface.class
