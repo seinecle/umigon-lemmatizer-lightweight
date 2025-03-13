@@ -3,7 +3,7 @@ A lemmatizer for **English**, **French** and **Spanish**.
 
 ## Installation
 
-Requires Java 17 or higher.
+Requires Java 21 or higher.
 
 This is a dependency free, 8kb jar:
 
@@ -11,7 +11,7 @@ This is a dependency free, 8kb jar:
 <dependency>
 	<groupId>net.clementlevallois.functions</groupId>
 	<artifcactId>umigon-lemmatizer-lightweight</artifactId>
-	<version>0.11</version>
+	<version>0.13</version>
 </dependency>
 ```
 
@@ -33,6 +33,8 @@ String result = lemmatizer.lemmatize("Students");
 // result: "Student"
 ```
 
+### Change
+0.13: fixed bug where common stopwords were not added to language specific stopwords. Added French stopwords. Bumped to JDK 21.
 
 ### Pros
 - light weight: 13kb, no dependencies

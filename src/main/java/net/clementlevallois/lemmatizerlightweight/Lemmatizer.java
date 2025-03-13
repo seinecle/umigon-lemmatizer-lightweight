@@ -19,7 +19,7 @@ import net.clementlevallois.lemmatizerlightweight.fr.LemmatizerFR;
 public class Lemmatizer {
 
     private String[] noLemmaEN = new String[]{"access", "accumbens", "addresses", "afterwards", "always", "amazing", "approaches", "analyses", "biases", "businesses", "ceiling", "classes", "crises", "daunting", "discusses", "during", "economics", "elsevier", "ethics", "focuses", "fries", "goes", "humanities", "hundred", "hypotheses", "inches", "king", "lens", "linguistics", "lies", "losses", "marketing", "morning", "news", "outlier", "outstanding", "physics", "politics", "premises", "processes", "red", "rigged", "ries", "series", "sometimes", "something", "species", "spring", "status", "ted", "themselves", "neural processes", "united", "wales", "witnesses"};
-    private String[] noLemmaFR = new String[]{"accès", "alors", "alpes", "ailleurs", "apres", "après", "aupres", "auprès", "Calvados", "concours", "corps", "cours", "dans", "discours", "divers", "etes", "êtes", "ethos", "éthos", "gens", "gros", "lors", "outils", "pays", "parcours", "pres", "près", "proces", "procès", "propos", "puis", "sans", "secours", "sens", "sommes", "succès", "succes", "temps", "toujours", "travers", "très", "tres", "univers", "viens", "vos"};
+    private String[] noLemmaFR = new String[]{"accès", "ailleurs", "alors", "alpes", "ailleurs", "apres", "après", "arrière", "arrières", "aupres", "auprès", "Calvados", "concours", "corps", "cours", "dans", "discours", "divers", "etes", "êtes", "ethos", "éthos", "gens", "gros", "lors", "outils", "pays", "parcours", "pres", "près", "proces", "procès", "propos", "puis", "sans", "secours", "sens", "sommes", "succès", "succes", "temps", "toujours", "travers", "très", "tres", "univers", "viens", "vos"};
     private String[] noLemmaES = new String[]{"revés", "atrás", "país", "gafas", "años","adiós","peces","tres", "azulgris","compás","menos", "mes", "tijeras", "avis", "anís", "vals", "compás", "alas", "análisis", "oasis", "paréntesis", "estrés", "colchones", "espejuelos", "martes", "lunes", "miércoles", "jueves", "viernes", "calcetines", "álbumes", "nueces", "veces", "coches", "alfileres", "lazos", "pistaches", "pañales", "prismas", "bolsos", "panes", "alfileres", "golpes", "jardines", "manos", "ojos", "dedos", "radios"};
     private String[] noLemma = new String[]{"analytics", "accumbens", "aws", "bayes", "business", "charles", "ects", "cnrs", "cosmos", "cowles", "deep learning", "developer", "ethos", "faas", "forbes", "iaas", "james", "keynes", "koopmans", "nhs", "paas", "paris", "programming", "reactjs", "saas", "siemens", "sanders", "ted", "virus", "vuejs", "united states"};
 
@@ -45,19 +45,19 @@ public class Lemmatizer {
 
         switch (lang) {
             case "en":
-                noLemmaSet = new HashSet(Arrays.asList(noLemmaEN));
+                noLemmaSet.addAll(Arrays.asList(noLemmaEN));
                 lemmatizerInterface = new LemmatizerEN(mergeToAmericanEnglish);
                 break;
             case "fr":
-                noLemmaSet = new HashSet(Arrays.asList(noLemmaFR));
+                noLemmaSet.addAll(Arrays.asList(noLemmaFR));
                 lemmatizerInterface = new LemmatizerFR();
                 break;
             case "es":
-                noLemmaSet = new HashSet(Arrays.asList(noLemmaES));
+                noLemmaSet.addAll(Arrays.asList(noLemmaES));
                 lemmatizerInterface = new LemmatizerES();
                 break;
             default:
-                noLemmaSet = new HashSet(Arrays.asList(noLemmaEN));
+                noLemmaSet.addAll(Arrays.asList(noLemmaEN));
                 lemmatizerInterface = new LemmatizerEN(mergeToAmericanEnglish);
                 break;
         }

@@ -4,7 +4,6 @@
  */
 package net.clementlevallois.lemmatizerlightweight.fr;
 
-import java.util.Set;
 import net.clementlevallois.lemmatizerlightweight.LemmatizerInterface;
 
 /**
