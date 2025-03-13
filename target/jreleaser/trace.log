@@ -109,7 +109,7 @@ project:
     languages:
         java:
             enabled: true
-            version: 17
+            version: 21
             groupId: net.clementlevallois.functions
             artifactId: umigon-lemmatizer-lightweight
             jvmOptions:
@@ -505,8 +505,8 @@ catalog:
  
 [INFO]  Project version set to 0.13
 [INFO]  Release is not snapshot
-[INFO]  Timestamp is 2025-03-13T11:05:54.8984555+01:00
-[INFO]  HEAD is at 07074c0
+[INFO]  Timestamp is 2025-03-13T11:30:50.1007108+01:00
+[INFO]  HEAD is at ab9fc8d
 [INFO]  Platform is windows-x86_64
 [DEBUG] loading extension default-jreleaser-mustache:org.jreleaser.extensions.internal.mustache.DefaultMustacheExtension
 [DEBUG] adding org.jreleaser.extensions.internal.mustache.DefaultMustacheExtensionPoint from default-jreleaser-mustache extension
